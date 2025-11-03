@@ -1,14 +1,1 @@
-import { initFormValidation } from './modules/form-validator.js';
-import { initModalControls } from './utils/ui-feedback.js';
-import { initSPANavigation } from './modules/dom-handler.js'; 
-
-document.addEventListener('DOMContentLoaded', () => {
-    
-    initSPANavigation();
-
-    initFormValidation();
-
-    initModalControls();
-
-    console.log('Os módulos JS estão funcionando e atendem aos requisitos de DOM.');
-});
+import{initFormValidation as o}from"./modules/form-validator.js";import{initModalControls as e}from"./utils/ui-feedback.js";import{initSPANavigation as d}from"./modules/dom-handler.js";document.addEventListener("DOMContentLoaded",()=>{d(),o(),e(),console.log("Os m\xf3dulos JS est\xe3o funcionando e atendem aos requisitos de DOM.")});
