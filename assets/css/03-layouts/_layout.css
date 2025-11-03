@@ -233,7 +233,6 @@ footer {
         padding: var(--space-xxxl) var(--space-lg);
     }
 
-    /* FLEXBOX DE CONTEÚDO (HISTÓRIA, PROJETOS INDIVIDUAIS, ETC.) */
     .historia-conteudo,
     .visao-conteudo,
     .content-with-image {
@@ -322,4 +321,43 @@ footer {
     .container {
         max-width: 1600px;
     }
+}
+.skip-link {
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  padding: 0.75rem 1rem;
+  z-index: 10000;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+.skip-link:focus {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+:where(a, button, [role="button"], input, select, textarea, [tabindex]) :focus,
+:where(a, button, [role="button"], input, select, textarea, [tabindex]):focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+.submenu {
+  display: none;
+}
+.submenu[data-open="true"] {
+  display: block;
+}
+
+.modal[aria-hidden="true"] {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0);
+  border: 0;
 }
