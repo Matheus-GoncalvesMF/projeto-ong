@@ -6,6 +6,7 @@
     margin-bottom: var(--space-xl);
 }
 
+
 .projeto {
     background-color: var(--color-text-light); 
     border: 1px solid var(--color-primary-light);
@@ -16,6 +17,11 @@
     transition: box-shadow 0.3s ease;
     margin-bottom: var(--space-lg);
     text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    gap: var(--space-sm);         
 }
 
 .projeto:hover {
@@ -26,14 +32,15 @@
     width: 100%;
     height: 200px; 
     object-fit: cover; 
-    margin-bottom: var(--space-md);
+    margin-bottom: 0;
 }
 
 .projeto h2 {
     font-size: var(--font-size-h3);
     padding: 0 var(--space-md);
     margin-top: 0; 
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
+    line-height: 1.2;
 }
 
 .projeto p {
@@ -42,11 +49,34 @@
     font-size: var(--font-size-base);
 }
 
+.card-subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary); 
+    font-weight: 700;
+    padding: 0 var(--space-md);
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-md);
+    text-transform: uppercase;
+    display: block;
+}
+----------------------------------------------- */
+
 .projeto.engajamento-card {
     text-align: center;
 }
 
-.projeto.engajamento-card h2,
+.projeto.engajamento-card h2 {
+    padding-top: -5;
+    margin-top: var(--space-xs); 
+    margin-bottom: var(--space-xs);
+    text-align: left;
+}
+
+
+.projeto.engajamento-card p:first-of-type {
+    margin-top: 0; 
+}
+
 .projeto.engajamento-card p,
 .projeto.engajamento-card .doacao-info {
     text-align: left;
@@ -60,6 +90,15 @@
     padding: 0 var(--space-md);
     margin-top: var(--space-lg);
 }
+
+.projeto img {
+    display: block;       
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
 
 .doacao-info {
     text-align: left;
@@ -92,6 +131,8 @@
 
 @media screen and (min-width: 992px) {
     .cards-container {
+        gap: var(--space-xl);
         grid-template-columns: repeat(3, 1fr);
+        align-items: stretch; 
     }
 }
