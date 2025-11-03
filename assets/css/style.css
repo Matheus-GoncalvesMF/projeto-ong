@@ -1,10 +1,1 @@
-@import url('02-design-system/_variables.css');
-@import url('01-base/_reset.css');
-@import url('01-base/_typography.css');
-@import url('03-layouts/_layout.css');
-@import url('04-components/_header-nav.css');
-@import url('04-components/_buttons.css');
-@import url('04-components/_cards.css');
-@import url('04-components/_forms.css');
-@import url('04-components/_feedback.css');
-@import url('04-components/_tags.css');
+@import url(02-design-system/_variables.css);@import url(01-base/_reset.css);@import url(01-base/_typography.css);@import url(03-layouts/_layout.css);@import url(04-components/_header-nav.css);@import url(04-components/_buttons.css);@import url(04-components/_cards.css);@import url(04-components/_forms.css);@import url(04-components/_feedback.css);@import url(04-components/_tags.css);
