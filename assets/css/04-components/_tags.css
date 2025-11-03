@@ -1,0 +1,25 @@
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.tag {
+    display: inline-block;
+    padding: var(--space-xxs) var(--space-sm);
+    border-radius: 4px;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tag-primary {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+}
+
+.tag-secondary {
+    background-color: var(--color-secondary-light);
+    color: var(--color-secondary-dark);
+}

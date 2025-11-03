@@ -1,0 +1,97 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    margin-top: var(--space-xxl);
+    margin-bottom: var(--space-xl);
+}
+
+.projeto {
+    background-color: var(--color-text-light); 
+    border: 1px solid var(--color-primary-light);
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    padding-bottom: var(--space-md); 
+    transition: box-shadow 0.3s ease;
+    margin-bottom: var(--space-lg);
+    text-align: left;
+}
+
+.projeto:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.projeto img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    margin-bottom: var(--space-md);
+}
+
+.projeto h2 {
+    font-size: var(--font-size-h3);
+    padding: 0 var(--space-md);
+    margin-top: 0; 
+    margin-bottom: var(--space-sm);
+}
+
+.projeto p {
+    padding: 0 var(--space-md);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-base);
+}
+
+.projeto.engajamento-card {
+    text-align: center;
+}
+
+.projeto.engajamento-card h2,
+.projeto.engajamento-card p,
+.projeto.engajamento-card .doacao-info {
+    text-align: left;
+}
+
+.projeto .doacao-titulo {
+    font-weight: 700;
+    font-size: var(--font-size-base);
+    color: var(--color-primary);
+    text-align: left;
+    padding: 0 var(--space-md);
+    margin-top: var(--space-lg);
+}
+
+.doacao-info {
+    text-align: left;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+    padding: 0 var(--space-md); 
+}
+
+.doacao-info dt {
+    font-weight: 700;
+    float: left; 
+    clear: left; 
+    width: 35%; 
+}
+
+.doacao-info dd {
+    margin-left: 38%; 
+    font-weight: 400;
+}
+
+@media screen and (min-width: 576px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cards-container .projeto {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

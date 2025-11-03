@@ -3,102 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início | ONG Patinhas</title>
+    <title>Projetos | ONG Patinhas</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
-    <meta name="description" content="ONG Patinhas: Missão, visão e valores. Conheça nossos projetos e saiba como ajudar.">
-    </head>
+    <meta name="description" content="Conheça os projetos de resgate, castração e adoção da ONG Patinhas. Veja como ser voluntário ou doar.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
 <header>
     <img 
         src="assets/img/logo.png" 
         alt="Logotipo ONG Patinhas" 
-        width="200"
+        width="100"
         style="max-width: 100%; height: auto;"
     >
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos Sociais</a></li>
-            <li><a href="cadastro.html">Quero ser Voluntário/Doador</a></li>
+        <nav>
+            <ul class="nav-list"> 
+                <li><a href="index.html">Início</a></li>
+                
+                <li class="dropdown">
+                    <a href="projetos.html">Projetos Sociais</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#projetos-em-destaque">Nossos Projetos</a></li>
+                        <li><a href="projetos.html#quero-doar">Quero Doar</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="cadastro.html">Quero ser Voluntário</a></li>
             </ul>
-    </nav>
+        </nav>
 </header>
-    <main>
-        <section id="projetos-em-destaque">
+
+<main>
+    <section id="projetos-em-destaque">
+        <div class="container">
             <h1>Conheça Nossos Projetos de Impacto Social</h1>
-            <p>Veja onde a sua ajuda pode fazer a diferença.</p>
 
-            <article class="projeto">
-                <h2>Projeto de Castração: Controle Populacional e Bem-Estar</h2>
+            <div class="cards-container grid grid-12-cols">
                 
-                <img 
-                    src="assets/img/castracao.png" 
-                    alt="Grupo de cães resgatados em recuperação pós-cirúrgica, usando colares protetores e vestimentas azuis da ONG."
-                    style="max-width: 400px; height: auto;"
-                >
+                <article class="projeto col-span-4">
+                    <img 
+                        src="assets/img/castracao.png" 
+                        alt="Cães usando cones cirúrgicos e camisetas azuis, deitados em camas, com um banner 'PROJETO DE CASTRAÇÃO ONG PATINHAS' ao fundo." 
+                    >
+                    <h2>Projeto de Castração: Controle Populacional e Bem-Estar</h2>
+                    
+                    <p class="card-subtitle">SAÚDE ANIMAL E BEM-ESTAR</p>
+
+                    <p>O Projeto de Castração é um pilar fundamental na luta contra o abandono e o sofrimento animal. Através de mutirões e parcerias, garantimos a castração gratuita e responsável dos cães resgatados sob nossos cuidados e, sempre que possível, de animais da comunidade de baixa renda.</p>
+                    <p>Nosso objetivo é reduzir a superpopulação de animais de rua, prevenindo doenças e promovendo o bem-estar da comunidade. Contribua com este projeto e ajude a transformar vidas!</p>
+                </article>
+
+                <article class="projeto col-span-4">
+                    <img 
+                        src="assets/img/patinhaenfaixada.png" 
+                        alt="Veterinário aplicando curativo em cão com a pata enfaixada." 
+                    >
+                    <h2>Tratamento e Reabilitação: Cuidado Imediato para Recomeços</h2>
+
+                    <p class="card-subtitle">CUIDADOS E REABILITAÇÃO DE ANIMAIS</p>
+
+                    <p>Muitos dos cães que chegam à ONG Patinhas são vítimas de negligência, atropelamentos ou doenças graves. O Projeto Tratamento e Reabilitação existe para custear os altos gastos com urgências médicas, cirurgias complexas e tratamentos de longo prazo.</p>
+                    <p>Este projeto garante que cada animal resgatado receba cuidados veterinários imediatos e completos, incluindo exames, medicamentos, internações e terapias de reabilitação. Sua contribuição garante a continuidade dos nossos projetos.</p>
+                </article>
                 
-                <p>
-                    O Projeto de Castração é um pilar fundamental na luta contra o abandono e o sofrimento animal. Através de mutirões e parcerias, garantimos a castração gratuita e responsável dos cães resgatados sob nossos cuidados e, sempre que possível, de animais da comunidade de baixa renda.
-                </p>
-
-            </article>
-
-            <article class="projeto">
-                <h2>Tratamento e Reabilitação: Cuidado Imediato para Recomeços</h2>
+                <article class="projeto engajamento-card col-span-4">
+                    <img src="assets/img/caes.png" alt="Cães brincando no gramado do santuário.">
+                    
+                    <h2>Seja um Voluntário ou Faça uma Doação!</h2>
+                    
+                    <p>Toda ajuda é sempre bem vinda! Ajude nossa Associação de Animais se voluntariando ou fazendo uma doação. Sua contribuição garante a continuidade dos nossos projetos.</p>
+                    
+                    <dl class="doacao-info align-left">
+                        <dt>Banco:</dt>
+                        <dd>Banco do Brasil</dd>
+                        <dt>Agência:</dt>
+                        <dd>9999</dd>
+                        <dt>Conta:</dt>
+                        <dd>99999-9</dd>
+                        <dt>Titular:</dt>
+                        <dd>Associação Protetora dos Animais ONG Patinhas</dd>
+                    </dl>
+                    <a href="cadastro.html" class="btn btn-marrom">Quero me Candidatar</a>
+                </article>
                 
-                <img 
-                    src="assets/img/patinhaenfaixada.png" 
-                    alt="Equipe de veterinários da ONG tratando um cão resgatado com ferimentos na pata."
-                    style="max-width: 400px; height: auto;"
-                >
-                
-                <p>
-                    Muitos dos cães que chegam à ONG Patinhas são vítimas de negligência, atropelamentos ou doenças graves. O Projeto Tratamento e Reabilitação existe para custear os altos gastos com urgências médicas, cirurgias complexas e tratamentos de longo prazo.
-                </p>
+            </div>
+        </div>
+    </section>
 
-                <p>
-                    Este projeto garante que cada animal resgatado receba cuidados veterinários imediatos e completos, incluindo exames, medicamentos, internações e terapias de reabilitação. Nossa meta é restaurar a saúde física e emocional desses cães para que possam ter uma segunda chance de vida, livres de dor e sofrimento.
-                </p>
+</main>
 
-                <p>
-                    Seu apoio direto a este projeto é vital. Cada doação cobre desde uma simples vacina e vermífugo até cirurgias ortopédicas de emergência. Você está nos ajudando a transformar um quadro de risco em uma história de recuperação e amor.
-                </p>
-                
-            </article>
-        </section>
-
-        <section id="voluntariado">
-            <h2>Seja um Voluntário!</h2>
-            <p>Toda ajuda é sempre bem vinda!</p>
-            <p>Para se candidatar, acesse nossa página de <a href="cadastro.html">Inscrição</a>.</p>
-        </section>
-
-        <section id="doacao">
-            <h2>Apoie Nossa Causa com uma Doação</h2>
-            <p>Sua contribuição garante a continuidade dos nossos projetos.</p>
-            <p>Aceitamos doações de rações, cobertores, medicamentos e quantias para custeio dos gastos.</p>
-            
-            <p>
-                <strong>CONTA PARA DOAÇÃO:</strong> <br>
-                Agência: 9999 <br>
-                Conta: 99999-9 <br>
-                Nome do Titular: Associação Protetora dos Animais ONG Patinhas <br>
-                Banco do Brasil
-            </p>
-        </section>
-
-        <section id="contato">
-            <h2>Fale Conosco</h2>
-            <address>
-                <p><strong>Endereço:</strong> Rua Patinhas, 99 - Lavras, Minas Gerais, 37200-999</p>
-                <p><strong>E-mail:</strong> <a href="mailto:contato@ong.org.br">ongpatinhas@ong.org.br</a></p>
-                <p><strong>Telefone:</strong> <a href="tel:+5535999999999">(35) 99999-9999</a></p>
-            </address>
-        </section>
-
-    </main>
-    <footer>
-        <p>&copy; 2025 ONG Patinhas. Todos os direitos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2025 ONG Patinhas. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
